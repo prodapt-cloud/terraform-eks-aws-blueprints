@@ -1,4 +1,4 @@
-module "helm_addon" {
+module "helm_addon_cloudwatch" {
   source            = "../helm-addon"
   manage_via_gitops = var.manage_via_gitops
   set_values        = local.set_values

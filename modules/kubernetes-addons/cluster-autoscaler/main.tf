@@ -4,7 +4,7 @@ locals {
   service_account = try(var.helm_config.service_account, "${local.name}-sa")
 }
 
-module "helm_addon" {
+module "helm_addon_autoscaler" {
   source = "../helm-addon"
 
   manage_via_gitops = var.manage_via_gitops
