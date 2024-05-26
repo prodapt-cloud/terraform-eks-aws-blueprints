@@ -1,4 +1,4 @@
-module "helm_addon" {
+module "helm_addon_metrics" {
   source = "../helm-addon"
 
   manage_via_gitops = var.manage_via_gitops
